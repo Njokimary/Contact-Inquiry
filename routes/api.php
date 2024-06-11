@@ -17,4 +17,6 @@ use App\Http\Controllers\ContactInquiryController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/contact', [ContactInquiryController::class, 'store']);
+// Route::post('/contact', [ContactInquiryController::class, 'store']);
+Route::middleware('auth.basic')->post('/contact', [ContactInquiryController::class, 'store']);
+
