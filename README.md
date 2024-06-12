@@ -26,6 +26,7 @@ This project is the backend prototype for a new contact form feature to be integ
 1. **Clone the Repository**:
    
    git clone https://github.com/Njokimary/Contact-Inquiry.git
+   
    cd Contact-Inquiry
 
 ## Install Dependencies:
@@ -36,6 +37,7 @@ composer install
 ## Set Up Environment Variables:
 
 Rename the .env.example file to .env.
+
 Update the API_USERNAME and API_PASSWORD variables with your desired credentials.
 
 ## Generate Application Key:
@@ -47,6 +49,7 @@ php artisan key:generate
 ## Database Setup:
 
 Create a MySQL database for the project.
+
 Update the .env file with your database credentials.
 
 ## Run Migrations:
@@ -59,6 +62,8 @@ php artisan serve
 
 ## API Endpoint
 GET /contact: Returns a message indicating that the contact endpoint exists. Use POST method to submit inquiries.
+
+POST /contact: Submits a contact inquiry.
 
 ## Running the Application Locally
 You can run the Laravel backend locally by starting the development server using the php artisan serve command.
