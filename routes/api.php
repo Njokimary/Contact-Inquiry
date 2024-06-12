@@ -18,5 +18,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 // Route::post('/contact', [ContactInquiryController::class, 'store']);
-Route::middleware('auth.basic')->post('/contact', [ContactInquiryController::class, 'store']);
+Route::middleware('auth.basic.custom')->post('/contact', [ContactInquiryController::class, 'store']);
 
+Route::get('/contact', function () {
+    return response()->json(['message' => 'Contact endpoint exists. Use POST to submit inquiries.']);
+});
+
+// Route::post('/contact', [ContactInquiryController::class, 'store']);
