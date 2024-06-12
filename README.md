@@ -24,13 +24,13 @@ This project is the backend prototype for a new contact form feature to be integ
 ### Installation
 
 1. **Clone the Repository**:
-   ```bash
+   
    git clone https://github.com/Njokimary/Contact-Inquiry.git
    cd Contact-Inquiry
 
 ## Install Dependencies:
 
-``bash
+
 composer install
 
 ## Set Up Environment Variables:
@@ -40,7 +40,7 @@ Update the API_USERNAME and API_PASSWORD variables with your desired credentials
 
 ## Generate Application Key:
 
-``bash
+
 
 php artisan key:generate
 
@@ -51,7 +51,6 @@ Update the .env file with your database credentials.
 
 ## Run Migrations:
 
-``bash
 php artisan migrate
 
 ## Start the Development Server:
